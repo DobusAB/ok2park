@@ -15,6 +15,12 @@
 		90A474941E963CC500165650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A474921E963CC500165650 /* LaunchScreen.storyboard */; };
 		90A4749F1E963CC500165650 /* ok2parkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4749E1E963CC500165650 /* ok2parkTests.swift */; };
 		90A474AA1E963CC500165650 /* ok2parkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A474A91E963CC500165650 /* ok2parkUITests.swift */; };
+		94E1BC2E1E965C9D00BCF094 /* GillSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 94E1BC2C1E965C7000BCF094 /* GillSans.ttc */; };
+		94E1BC301E965F0C00BCF094 /* MinafordonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1BC2F1E965F0C00BCF094 /* MinafordonViewController.swift */; };
+		94E1BC341E96720F00BCF094 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1BC331E96720F00BCF094 /* extensions.swift */; };
+		94E1BC361E9674E500BCF094 /* Nyparkering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E1BC351E9674E500BCF094 /* Nyparkering.storyboard */; };
+		94E1BC381E967EC700BCF094 /* NyparkeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1BC371E967EC700BCF094 /* NyparkeringViewController.swift */; };
+		94EF947B1E964FDC0052E314 /* Minafordon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EF947A1E964FDC0052E314 /* Minafordon.storyboard */; };
 		C4E6175DF117871E94066DA2 /* Pods_ok2park.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071942E1BF4DEA3C92579980 /* Pods_ok2park.framework */; };
 		DE1BECA424A3C6C6D4EDA905 /* Pods_ok2parkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EE5101E329A77DAB191E24 /* Pods_ok2parkTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +64,12 @@
 		90A474A51E963CC500165650 /* ok2parkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ok2parkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A474A91E963CC500165650 /* ok2parkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ok2parkUITests.swift; sourceTree = "<group>"; };
 		90A474AB1E963CC500165650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E1BC2C1E965C7000BCF094 /* GillSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = GillSans.ttc; sourceTree = "<group>"; };
+		94E1BC2F1E965F0C00BCF094 /* MinafordonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinafordonViewController.swift; sourceTree = "<group>"; };
+		94E1BC331E96720F00BCF094 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		94E1BC351E9674E500BCF094 /* Nyparkering.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Nyparkering.storyboard; sourceTree = "<group>"; };
+		94E1BC371E967EC700BCF094 /* NyparkeringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyparkeringViewController.swift; sourceTree = "<group>"; };
+		94EF947A1E964FDC0052E314 /* Minafordon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Minafordon.storyboard; sourceTree = "<group>"; };
 		D20946832332503B101BBE92 /* Pods-ok2park.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ok2park.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ok2park/Pods-ok2park.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +117,7 @@
 		90A4747D1E963CC400165650 = {
 			isa = PBXGroup;
 			children = (
+				94E1BC2D1E965C7600BCF094 /* Fonts */,
 				90A474881E963CC500165650 /* ok2park */,
 				90A4749D1E963CC500165650 /* ok2parkTests */,
 				90A474A81E963CC500165650 /* ok2parkUITests */,
@@ -128,10 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				90A474891E963CC500165650 /* AppDelegate.swift */,
-				90A4748B1E963CC500165650 /* ViewController.swift */,
-				90A4748D1E963CC500165650 /* Main.storyboard */,
+				94EF94791E964F9C0052E314 /* Storyboards */,
+				94EF947C1E96585E0052E314 /* Kartvy */,
 				90A474901E963CC500165650 /* Assets.xcassets */,
 				90A474921E963CC500165650 /* LaunchScreen.storyboard */,
+				94E1BC371E967EC700BCF094 /* NyparkeringViewController.swift */,
+				94E1BC331E96720F00BCF094 /* extensions.swift */,
 				90A474951E963CC500165650 /* Info.plist */,
 			);
 			path = ok2park;
@@ -153,6 +168,33 @@
 				90A474AB1E963CC500165650 /* Info.plist */,
 			);
 			path = ok2parkUITests;
+			sourceTree = "<group>";
+		};
+		94E1BC2D1E965C7600BCF094 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				94E1BC2C1E965C7000BCF094 /* GillSans.ttc */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		94EF94791E964F9C0052E314 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				94EF947A1E964FDC0052E314 /* Minafordon.storyboard */,
+				90A4748D1E963CC500165650 /* Main.storyboard */,
+				94E1BC351E9674E500BCF094 /* Nyparkering.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		94EF947C1E96585E0052E314 /* Kartvy */ = {
+			isa = PBXGroup;
+			children = (
+				90A4748B1E963CC500165650 /* ViewController.swift */,
+				94E1BC2F1E965F0C00BCF094 /* MinafordonViewController.swift */,
+			);
+			name = Kartvy;
 			sourceTree = "<group>";
 		};
 		A094FD5D4771BCF870C110A2 /* Frameworks */ = {
@@ -284,9 +326,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E1BC2E1E965C9D00BCF094 /* GillSans.ttc in Resources */,
 				90A474941E963CC500165650 /* LaunchScreen.storyboard in Resources */,
 				90A474911E963CC500165650 /* Assets.xcassets in Resources */,
+				94EF947B1E964FDC0052E314 /* Minafordon.storyboard in Resources */,
 				90A4748F1E963CC500165650 /* Main.storyboard in Resources */,
+				94E1BC361E9674E500BCF094 /* Nyparkering.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A4748C1E963CC500165650 /* ViewController.swift in Sources */,
+				94E1BC301E965F0C00BCF094 /* MinafordonViewController.swift in Sources */,
+				94E1BC381E967EC700BCF094 /* NyparkeringViewController.swift in Sources */,
 				90A4748A1E963CC500165650 /* AppDelegate.swift in Sources */,
+				94E1BC341E96720F00BCF094 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +755,7 @@
 				90A474B01E963CC500165650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A474B11E963CC500165650 /* Build configuration list for PBXNativeTarget "ok2parkTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +764,7 @@
 				90A474B31E963CC500165650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A474B41E963CC500165650 /* Build configuration list for PBXNativeTarget "ok2parkUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +773,7 @@
 				90A474B61E963CC500165650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
