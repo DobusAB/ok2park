@@ -1,0 +1,6 @@
+framework module Pods_ok2park {
+  umbrella header "Pods-ok2park-umbrella.h"
+
+  export *
+  module * { export * }
+}
