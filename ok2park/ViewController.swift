@@ -34,5 +34,9 @@ class ViewController: UIViewController {
     @IBAction func goToMinafordonSegue(_ sender: Any) {
         self.performSegue(withIdentifier: "ShowMinafordonSegue", sender: self)
     }
+
+    @IBAction func goToNyparkeringSegue(_ sender: Any) {
+        self.performSegue(withIdentifier: "ShowNyparkeringSegue", sender: self)
+    }
 }
 

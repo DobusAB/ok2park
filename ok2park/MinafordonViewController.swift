@@ -28,10 +28,10 @@ class MinafordonViewController: UIViewController {
         
         //UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "GillSans-SemiBold", size: 20)!]
         
-        self.navigationController?.navigationBar.titleTextAttributes = [
+        /*self.navigationController?.navigationBar.titleTextAttributes = [
             NSFontAttributeName: UIFont(name: "GillSans-SemiBold", size: 20),
             NSForegroundColorAttributeName: UIColor.white
-        ]
+        ]*/
         
         colorViewPurple.layer.cornerRadius = colorViewPurple.frame.size.width/2
         self.colorViewPurple.layer.masksToBounds = false

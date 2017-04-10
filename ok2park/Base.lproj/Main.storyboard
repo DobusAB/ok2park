@@ -30,6 +30,15 @@
                                     <segue destination="szO-HS-Hyq" kind="show" identifier="ShowMinafordonSegue" id="m60-Mh-h6v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybo-Wl-Eg1">
+                                <rect key="frame" x="164" y="382" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goToNyparkeringSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfc-Kg-Xbl"/>
+                                    <segue destination="Hx1-lG-XRO" kind="show" identifier="ShowNyparkeringSegue" id="GN4-Nt-j7D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -43,7 +52,15 @@
                 <viewControllerPlaceholder storyboardName="Minafordon" id="szO-HS-Hyq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQD-8z-khQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="193"/>
+            <point key="canvasLocation" x="760" y="-34"/>
+        </scene>
+        <!--Nyparkering-->
+        <scene sceneID="Un1-hr-bKK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Nyparkering" id="Hx1-lG-XRO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEm-Dt-rFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="334"/>
         </scene>
     </scenes>
 </document>
