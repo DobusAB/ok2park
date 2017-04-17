@@ -32,6 +32,9 @@
                                     <navigationItem title="Mina fordon" id="kfe-dn-9cX">
                                         <barButtonItem key="leftBarButtonItem" image="back-button_icon" id="woB-AL-Z5Q">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="backButtonOnTouch:" destination="GKU-Q1-S6g" id="NbD-ue-4uN"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -183,7 +186,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Välj en tillhörande färg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-6k-CBQ">
-                                                    <rect key="frame" x="88" y="10" width="159" height="19.5"/>
+                                                    <rect key="frame" x="88" y="10" width="159" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -314,14 +317,14 @@
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6f-26-1Kw">
-                                    <rect key="frame" x="268" y="485" width="45" height="34"/>
+                                    <rect key="frame" x="280" y="482" width="45" height="34"/>
                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
                                     <state key="normal" title="Spara">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-qY-ZRi">
-                                    <rect key="frame" x="50" y="485" width="54" height="34"/>
+                                    <rect key="frame" x="50" y="482" width="54" height="34"/>
                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
                                     <state key="normal" title="Avbryt">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -331,18 +334,18 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstItem="kAc-qY-ZRi" firstAttribute="leading" secondItem="I8G-UN-czZ" secondAttribute="leading" constant="50" id="8Uo-aj-EdP"/>
-                                <constraint firstItem="b6f-26-1Kw" firstAttribute="top" secondItem="dum-Tm-eGv" secondAttribute="bottom" constant="18" id="CJA-97-jof"/>
+                                <constraint firstItem="b6f-26-1Kw" firstAttribute="top" secondItem="dum-Tm-eGv" secondAttribute="bottom" constant="15" id="CJA-97-jof"/>
+                                <constraint firstItem="kAc-qY-ZRi" firstAttribute="leading" secondItem="dum-Tm-eGv" secondAttribute="leading" constant="30" id="DVG-YA-mfg"/>
                                 <constraint firstItem="vTy-8N-zD0" firstAttribute="leading" secondItem="I8G-UN-czZ" secondAttribute="leading" constant="20" id="Db1-zY-ohW"/>
                                 <constraint firstAttribute="bottom" secondItem="dum-Tm-eGv" secondAttribute="bottom" constant="200" id="HFl-L5-y4a"/>
                                 <constraint firstAttribute="trailing" secondItem="vTy-8N-zD0" secondAttribute="trailing" constant="20" id="WfJ-OR-TJy"/>
                                 <constraint firstAttribute="trailing" secondItem="dum-Tm-eGv" secondAttribute="trailing" constant="20" id="Zgv-Cy-1oZ"/>
+                                <constraint firstItem="b6f-26-1Kw" firstAttribute="trailing" secondItem="dum-Tm-eGv" secondAttribute="trailing" constant="-30" id="dYq-f5-xeY"/>
                                 <constraint firstItem="dum-Tm-eGv" firstAttribute="top" secondItem="vTy-8N-zD0" secondAttribute="bottom" constant="20" id="jYw-W4-W5s"/>
-                                <constraint firstAttribute="trailing" secondItem="b6f-26-1Kw" secondAttribute="trailing" constant="62" id="jpn-uG-vyS"/>
                                 <constraint firstItem="dum-Tm-eGv" firstAttribute="leading" secondItem="I8G-UN-czZ" secondAttribute="leading" constant="20" id="mhb-DG-5aD"/>
-                                <constraint firstItem="kAc-qY-ZRi" firstAttribute="top" secondItem="dum-Tm-eGv" secondAttribute="bottom" constant="18" id="nBh-bs-5zj"/>
+                                <constraint firstItem="kAc-qY-ZRi" firstAttribute="top" secondItem="dum-Tm-eGv" secondAttribute="bottom" constant="15" id="nBh-bs-5zj"/>
                             </constraints>
                         </view>
                     </subviews>

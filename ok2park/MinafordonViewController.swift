@@ -69,7 +69,7 @@ class MinafordonViewController: UIViewController {
         addNewPlateView.layer.shadowRadius = 5.0
         addNewPlateView.layer.shadowColor = UIColor(red:0.51, green:0.51, blue:0.51, alpha:1.0).cgColor
         
-        addNewVehicleButton.layer.cornerRadius = 2.0
+        addNewVehicleButton.layer.cornerRadius = 10.0
         self.addNewVehicleButton.layer.masksToBounds = false
         
         addNewPlateView.layer.cornerRadius = 10.0
@@ -372,4 +372,7 @@ class MinafordonViewController: UIViewController {
         }
     }
 
+    @IBAction func backButtonOnTouch(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

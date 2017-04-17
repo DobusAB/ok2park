@@ -1,3 +1,12 @@
-PODFILE CHECKSUM: 666b46faa4d0b1b7f673bd881c2bafab97f0d44f
+PODS:
+  - KCFloatingActionButton (2.2.0)
+
+DEPENDENCIES:
+  - KCFloatingActionButton (~> 2.2.0)
+
+SPEC CHECKSUMS:
+  KCFloatingActionButton: 8c71fa25774e422c8d407f82b4b27809d0cd5233
+
+PODFILE CHECKSUM: 34e3e6f3ecca9025fc77a3f33e3a22294be4965c
 
 COCOAPODS: 1.1.1

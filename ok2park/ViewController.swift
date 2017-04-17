@@ -7,9 +7,10 @@
 //
 
 import UIKit
+//import KCFloatingActionButton
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
@@ -22,6 +23,10 @@ class ViewController: UIViewController {
                 print("== \(names)")
             }
         }*/
+        
+       /* let fab = KCFloatingActionButton()
+        fab.addItem("Hello, World!", icon: UIImage(named: "icon")!)
+        self.view.addSubview(fab)*/
         
     }
 

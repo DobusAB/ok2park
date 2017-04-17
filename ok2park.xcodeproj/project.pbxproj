@@ -15,6 +15,8 @@
 		90A474941E963CC500165650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A474921E963CC500165650 /* LaunchScreen.storyboard */; };
 		90A4749F1E963CC500165650 /* ok2parkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4749E1E963CC500165650 /* ok2parkTests.swift */; };
 		90A474AA1E963CC500165650 /* ok2parkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A474A91E963CC500165650 /* ok2parkUITests.swift */; };
+		9433DA6E1EA4C1570042AC91 /* SignsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */; };
+		9433DA701EA4C4F90042AC91 /* SignsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433DA6F1EA4C4F90042AC91 /* SignsCollectionViewCell.swift */; };
 		94E1BC2E1E965C9D00BCF094 /* GillSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 94E1BC2C1E965C7000BCF094 /* GillSans.ttc */; };
 		94E1BC301E965F0C00BCF094 /* MinafordonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1BC2F1E965F0C00BCF094 /* MinafordonViewController.swift */; };
 		94E1BC341E96720F00BCF094 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1BC331E96720F00BCF094 /* extensions.swift */; };
@@ -64,6 +66,8 @@
 		90A474A51E963CC500165650 /* ok2parkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ok2parkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A474A91E963CC500165650 /* ok2parkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ok2parkUITests.swift; sourceTree = "<group>"; };
 		90A474AB1E963CC500165650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsCollectionViewController.swift; sourceTree = "<group>"; };
+		9433DA6F1EA4C4F90042AC91 /* SignsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsCollectionViewCell.swift; sourceTree = "<group>"; };
 		94E1BC2C1E965C7000BCF094 /* GillSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = GillSans.ttc; sourceTree = "<group>"; };
 		94E1BC2F1E965F0C00BCF094 /* MinafordonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinafordonViewController.swift; sourceTree = "<group>"; };
 		94E1BC331E96720F00BCF094 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				94EF947C1E96585E0052E314 /* Kartvy */,
 				90A474901E963CC500165650 /* Assets.xcassets */,
 				90A474921E963CC500165650 /* LaunchScreen.storyboard */,
+				9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */,
+				9433DA6F1EA4C4F90042AC91 /* SignsCollectionViewCell.swift */,
 				94E1BC371E967EC700BCF094 /* NyparkeringViewController.swift */,
 				94E1BC331E96720F00BCF094 /* extensions.swift */,
 				90A474951E963CC500165650 /* Info.plist */,
@@ -496,7 +502,9 @@
 			files = (
 				90A4748C1E963CC500165650 /* ViewController.swift in Sources */,
 				94E1BC301E965F0C00BCF094 /* MinafordonViewController.swift in Sources */,
+				9433DA701EA4C4F90042AC91 /* SignsCollectionViewCell.swift in Sources */,
 				94E1BC381E967EC700BCF094 /* NyparkeringViewController.swift in Sources */,
+				9433DA6E1EA4C1570042AC91 /* SignsCollectionViewController.swift in Sources */,
 				90A4748A1E963CC500165650 /* AppDelegate.swift in Sources */,
 				94E1BC341E96720F00BCF094 /* extensions.swift in Sources */,
 			);

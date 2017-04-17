@@ -16,6 +16,12 @@ class NyparkeringViewController: UIViewController {
     @IBOutlet weak var reminderButton: UIButton!
     @IBOutlet weak var leftBlockView: UIView!
     @IBOutlet weak var rightBlockView: UIView!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var reminderPopupView: UIView!
+    @IBOutlet var wholePopupView: UIView!
+    @IBOutlet weak var popupHeaderView: UIView!
+    @IBOutlet var wholeSignsPopupView: UIView!
+    @IBOutlet weak var signsContainerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +30,14 @@ class NyparkeringViewController: UIViewController {
             NSFontAttributeName: UIFont(name: "GillSans-SemiBold", size: 20),
             NSForegroundColorAttributeName: UIColor.white
         ]*/
+        
+        signsContainerView.layer.cornerRadius = 10.0
+        self.signsContainerView.layer.masksToBounds = false
+        
+        popupHeaderView.roundedButton2()
+        
+        containerView.layer.cornerRadius = 10.0
+        self.containerView.layer.masksToBounds = false
         
         reminderButton.roundedButton()
         
@@ -70,8 +84,81 @@ class NyparkeringViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func animateCloseButton() {
+        UIView.animate(withDuration: 0.4) {
+            self.wholePopupView.alpha = 0
+        }
+        let when = DispatchTime.now() + 1 // change integer to desired number of se   conds
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            // Your code with delay
+            self.wholePopupView.removeFromSuperview()
+        }
+    }
+    
+    func animateIn() {
+        self.view.addSubview(wholePopupView)
+        //containerView.bindFrameToSuperviewBounds()
+        wholePopupView.center = self.view.center
+        
+        wholePopupView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        wholePopupView.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.wholePopupView.alpha = 1
+            self.wholePopupView.transform = CGAffineTransform.identity
+            
+        }
+    }
+    
+    func animateCloseButton2() {
+        UIView.animate(withDuration: 0.4) {
+            self.wholeSignsPopupView.alpha = 0
+        }
+        let when = DispatchTime.now() + 1 // change integer to desired number of se   conds
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            // Your code with delay
+            self.wholeSignsPopupView.removeFromSuperview()
+        }
+    }
+    
+    func animateIn2() {
+        self.view.addSubview(wholeSignsPopupView)
+        //containerView.bindFrameToSuperviewBounds()
+        wholeSignsPopupView.center = self.view.center
+        
+        wholeSignsPopupView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        wholeSignsPopupView.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.wholeSignsPopupView.alpha = 1
+            self.wholeSignsPopupView.transform = CGAffineTransform.identity
+            
+        }
+    }
+    
     @IBAction func backButtonOnTouch(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func reminderButtonOnTouch(_ sender: Any) {
+        animateIn()
+    }
+
+    @IBAction func cancelReminderButtonOnTouch(_ sender: Any) {
+        animateCloseButton()
+    }
+    
+    @IBAction func successReminderButtonOnTouch(_ sender: Any) {
+        // Success
+    }
+    
+    @IBAction func seeSignsButtonOnTouch(_ sender: Any) {
+        animateIn2()
+    }
+    
+    @IBAction func seeSignsCloseButtonOnTouch(_ sender: Any) {
+        animateCloseButton2()
     }
 
 }

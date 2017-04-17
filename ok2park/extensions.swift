@@ -40,3 +40,13 @@ extension UIButton {
         self.layer.mask = maskLayer1
     }
 }
+
+extension UIView {
+    func roundedButton2(){
+        let maskPAth1 = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: [.topRight , .topLeft],cornerRadii:CGSize(width:10.0, height:10.0))
+        let maskLayer1 = CAShapeLayer()
+        maskLayer1.frame = self.bounds
+        maskLayer1.path = maskPAth1.cgPath
+        self.layer.mask = maskLayer1
+    }
+}

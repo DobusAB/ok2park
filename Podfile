@@ -5,6 +5,8 @@ target 'ok2park' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  pod "KCFloatingActionButton", "~> 2.2.0"
+
   # Pods for ok2park
 
   target 'ok2parkTests' do
