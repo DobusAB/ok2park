@@ -178,7 +178,9 @@ class NyparkeringViewController: UIViewController {
     }
     
     @IBAction func seeSignsButtonOnTouch(_ sender: Any) {
-        animateIn2()
+        // animateIn2()
+        performSegue(withIdentifier: "GoToImage", sender: self)
+        print("show image")
     }
     
     @IBAction func seeSignsCloseButtonOnTouch(_ sender: Any) {
@@ -191,6 +193,17 @@ class NyparkeringViewController: UIViewController {
         let url = "http://maps.apple.com/maps?daddr=\(coordinate.latitude),\(coordinate.longitude)"
         UIApplication.shared.openURL(URL(string:url)!)
     
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "GoToImage")
+        {
+            let controller = segue.destination as! ImageViewController
+            
+            
+            controller.item = self.item["park_sign"] as! String
+
+        }
     }
     
     

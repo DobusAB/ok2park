@@ -21,6 +21,7 @@
 		90A474AA1E963CC500165650 /* ok2parkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A474A91E963CC500165650 /* ok2parkUITests.swift */; };
 		90A6158B1EC39FAA008D6EE9 /* FordonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6158A1EC39FAA008D6EE9 /* FordonTableViewCell.swift */; };
 		90A6158E1EC3BA22008D6EE9 /* parks.json in Resources */ = {isa = PBXBuildFile; fileRef = 90A6158D1EC3BA22008D6EE9 /* parks.json */; };
+		90C5277A1EC4799900766636 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C527791EC4799900766636 /* ImageViewController.swift */; };
 		90C606231EC30796004F2BAE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C606221EC30796004F2BAE /* MapKit.framework */; };
 		90C606251EC395C0004F2BAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90C606241EC395C0004F2BAE /* GoogleService-Info.plist */; };
 		9433DA6E1EA4C1570042AC91 /* SignsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */; };
@@ -80,6 +81,7 @@
 		90A474AB1E963CC500165650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A6158A1EC39FAA008D6EE9 /* FordonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FordonTableViewCell.swift; sourceTree = "<group>"; };
 		90A6158D1EC3BA22008D6EE9 /* parks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parks.json; sourceTree = "<group>"; };
+		90C527791EC4799900766636 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		90C606221EC30796004F2BAE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		90C606241EC395C0004F2BAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsCollectionViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				903FBC9C1EBE32D9008A4D3E /* Parks.swift */,
 				903FBC9E1EBE345B008A4D3E /* VCMapView.swift */,
 				90A6158A1EC39FAA008D6EE9 /* FordonTableViewCell.swift */,
+				90C527791EC4799900766636 /* ImageViewController.swift */,
 			);
 			path = ok2park;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				90A6158B1EC39FAA008D6EE9 /* FordonTableViewCell.swift in Sources */,
 				9433DA701EA4C4F90042AC91 /* SignsCollectionViewCell.swift in Sources */,
 				903FBC9F1EBE345B008A4D3E /* VCMapView.swift in Sources */,
+				90C5277A1EC4799900766636 /* ImageViewController.swift in Sources */,
 				94E1BC381E967EC700BCF094 /* NyparkeringViewController.swift in Sources */,
 				9433DA6E1EA4C1570042AC91 /* SignsCollectionViewController.swift in Sources */,
 				90A4748A1E963CC500165650 /* AppDelegate.swift in Sources */,

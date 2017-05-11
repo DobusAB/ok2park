@@ -64,7 +64,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                   coordinate: CLLocationCoordinate2D(latitude: item["lat"].doubleValue, longitude: item["long"].doubleValue),
                                   pay_time: item["pay_time"].stringValue,
                                   zones: item["zone"].stringValue,
-                                  background_image: item["background_image"].stringValue
+                                  background_image: item["background_image"].stringValue,
+                                  park_sign: item["park_sign"].stringValue
                                   
                 )
                 mapView.addAnnotation(parks)
@@ -154,7 +155,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             "coordinate": location.coordinate,
             "zone": location.zones,
             "pay_time": location.pay_time,
-            "background_image": location.background_image
+            "background_image": location.background_image,
+            "park_sign": location.park_sign
             ] as [String : Any];
         performSegue(withIdentifier: "ShowNyparkeringSegue", sender: self)
         //print(location)
