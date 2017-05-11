@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		20E9AF2361CED98FD4125902 /* Pods_ok2parkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C47BA5804ECB88D6C22AE5F /* Pods_ok2parkUITests.framework */; };
+		901B47BA1EBA68990039718C /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901B47B91EBA68990039718C /* ActionButton.swift */; };
+		901B47BC1EBA68C80039718C /* ActionButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901B47BB1EBA68C80039718C /* ActionButtonItem.swift */; };
+		903FBC9D1EBE32D9008A4D3E /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FBC9C1EBE32D9008A4D3E /* Parks.swift */; };
+		903FBC9F1EBE345B008A4D3E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903FBC9E1EBE345B008A4D3E /* VCMapView.swift */; };
 		90A4748A1E963CC500165650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A474891E963CC500165650 /* AppDelegate.swift */; };
 		90A4748C1E963CC500165650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4748B1E963CC500165650 /* ViewController.swift */; };
 		90A4748F1E963CC500165650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A4748D1E963CC500165650 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 		90A474941E963CC500165650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A474921E963CC500165650 /* LaunchScreen.storyboard */; };
 		90A4749F1E963CC500165650 /* ok2parkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4749E1E963CC500165650 /* ok2parkTests.swift */; };
 		90A474AA1E963CC500165650 /* ok2parkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A474A91E963CC500165650 /* ok2parkUITests.swift */; };
+		90A6158B1EC39FAA008D6EE9 /* FordonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6158A1EC39FAA008D6EE9 /* FordonTableViewCell.swift */; };
+		90A6158E1EC3BA22008D6EE9 /* parks.json in Resources */ = {isa = PBXBuildFile; fileRef = 90A6158D1EC3BA22008D6EE9 /* parks.json */; };
+		90C606231EC30796004F2BAE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C606221EC30796004F2BAE /* MapKit.framework */; };
+		90C606251EC395C0004F2BAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90C606241EC395C0004F2BAE /* GoogleService-Info.plist */; };
 		9433DA6E1EA4C1570042AC91 /* SignsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */; };
 		9433DA701EA4C4F90042AC91 /* SignsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433DA6F1EA4C4F90042AC91 /* SignsCollectionViewCell.swift */; };
 		94E1BC2E1E965C9D00BCF094 /* GillSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 94E1BC2C1E965C7000BCF094 /* GillSans.ttc */; };
@@ -53,6 +61,10 @@
 		6D10119314C6EA38D1518F94 /* Pods-ok2parkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ok2parkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ok2parkTests/Pods-ok2parkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FFA1DB6E2E4DBED0EB675A4 /* Pods-ok2parkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ok2parkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ok2parkTests/Pods-ok2parkTests.release.xcconfig"; sourceTree = "<group>"; };
 		70270C748CF50195FBC15907 /* Pods-ok2parkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ok2parkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ok2parkUITests/Pods-ok2parkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		901B47B91EBA68990039718C /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		901B47BB1EBA68C80039718C /* ActionButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonItem.swift; sourceTree = "<group>"; };
+		903FBC9C1EBE32D9008A4D3E /* Parks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
+		903FBC9E1EBE345B008A4D3E /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		90A474861E963CC500165650 /* ok2park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ok2park.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A474891E963CC500165650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A4748B1E963CC500165650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +78,10 @@
 		90A474A51E963CC500165650 /* ok2parkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ok2parkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A474A91E963CC500165650 /* ok2parkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ok2parkUITests.swift; sourceTree = "<group>"; };
 		90A474AB1E963CC500165650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90A6158A1EC39FAA008D6EE9 /* FordonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FordonTableViewCell.swift; sourceTree = "<group>"; };
+		90A6158D1EC3BA22008D6EE9 /* parks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parks.json; sourceTree = "<group>"; };
+		90C606221EC30796004F2BAE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		90C606241EC395C0004F2BAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9433DA6D1EA4C1570042AC91 /* SignsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsCollectionViewController.swift; sourceTree = "<group>"; };
 		9433DA6F1EA4C4F90042AC91 /* SignsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsCollectionViewCell.swift; sourceTree = "<group>"; };
 		94E1BC2C1E965C7000BCF094 /* GillSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = GillSans.ttc; sourceTree = "<group>"; };
@@ -82,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C606231EC30796004F2BAE /* MapKit.framework in Frameworks */,
 				C4E6175DF117871E94066DA2 /* Pods_ok2park.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +161,8 @@
 		90A474881E963CC500165650 /* ok2park */ = {
 			isa = PBXGroup;
 			children = (
+				90A6158D1EC3BA22008D6EE9 /* parks.json */,
+				90A6158C1EC3B9FE008D6EE9 /* supporting files */,
 				90A474891E963CC500165650 /* AppDelegate.swift */,
 				94EF94791E964F9C0052E314 /* Storyboards */,
 				94EF947C1E96585E0052E314 /* Kartvy */,
@@ -154,6 +173,12 @@
 				94E1BC371E967EC700BCF094 /* NyparkeringViewController.swift */,
 				94E1BC331E96720F00BCF094 /* extensions.swift */,
 				90A474951E963CC500165650 /* Info.plist */,
+				90C606241EC395C0004F2BAE /* GoogleService-Info.plist */,
+				901B47B91EBA68990039718C /* ActionButton.swift */,
+				901B47BB1EBA68C80039718C /* ActionButtonItem.swift */,
+				903FBC9C1EBE32D9008A4D3E /* Parks.swift */,
+				903FBC9E1EBE345B008A4D3E /* VCMapView.swift */,
+				90A6158A1EC39FAA008D6EE9 /* FordonTableViewCell.swift */,
 			);
 			path = ok2park;
 			sourceTree = "<group>";
@@ -174,6 +199,13 @@
 				90A474AB1E963CC500165650 /* Info.plist */,
 			);
 			path = ok2parkUITests;
+			sourceTree = "<group>";
+		};
+		90A6158C1EC3B9FE008D6EE9 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 		94E1BC2D1E965C7600BCF094 /* Fonts */ = {
@@ -206,6 +238,7 @@
 		A094FD5D4771BCF870C110A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90C606221EC30796004F2BAE /* MapKit.framework */,
 				071942E1BF4DEA3C92579980 /* Pods_ok2park.framework */,
 				14EE5101E329A77DAB191E24 /* Pods_ok2parkTests.framework */,
 				0C47BA5804ECB88D6C22AE5F /* Pods_ok2parkUITests.framework */,
@@ -292,6 +325,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = MQ9FHQX886;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					90A474991E963CC500165650 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -335,9 +376,11 @@
 				94E1BC2E1E965C9D00BCF094 /* GillSans.ttc in Resources */,
 				90A474941E963CC500165650 /* LaunchScreen.storyboard in Resources */,
 				90A474911E963CC500165650 /* Assets.xcassets in Resources */,
+				90A6158E1EC3BA22008D6EE9 /* parks.json in Resources */,
 				94EF947B1E964FDC0052E314 /* Minafordon.storyboard in Resources */,
 				90A4748F1E963CC500165650 /* Main.storyboard in Resources */,
 				94E1BC361E9674E500BCF094 /* Nyparkering.storyboard in Resources */,
+				90C606251EC395C0004F2BAE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,12 +544,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A4748C1E963CC500165650 /* ViewController.swift in Sources */,
+				903FBC9D1EBE32D9008A4D3E /* Parks.swift in Sources */,
 				94E1BC301E965F0C00BCF094 /* MinafordonViewController.swift in Sources */,
+				90A6158B1EC39FAA008D6EE9 /* FordonTableViewCell.swift in Sources */,
 				9433DA701EA4C4F90042AC91 /* SignsCollectionViewCell.swift in Sources */,
+				903FBC9F1EBE345B008A4D3E /* VCMapView.swift in Sources */,
 				94E1BC381E967EC700BCF094 /* NyparkeringViewController.swift in Sources */,
 				9433DA6E1EA4C1570042AC91 /* SignsCollectionViewController.swift in Sources */,
 				90A4748A1E963CC500165650 /* AppDelegate.swift in Sources */,
+				901B47BC1EBA68C80039718C /* ActionButtonItem.swift in Sources */,
 				94E1BC341E96720F00BCF094 /* extensions.swift in Sources */,
+				901B47BA1EBA68990039718C /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.dobus.ok2park;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -679,6 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.dobus.ok2park;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

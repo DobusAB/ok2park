@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import MapKit
 
 class NyparkeringViewController: UIViewController {
     @IBOutlet weak var avgiftstidView: UIView!
@@ -22,9 +24,29 @@ class NyparkeringViewController: UIViewController {
     @IBOutlet weak var popupHeaderView: UIView!
     @IBOutlet var wholeSignsPopupView: UIView!
     @IBOutlet weak var signsContainerView: UIView!
-
+    @IBOutlet weak var paytimeLabel: UILabel!
+    @IBOutlet weak var zoneLabel: UILabel!
+    
+    @IBOutlet weak var cityPicView: UIImageView!
+    var item = [String: Any]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(item)
+        
+        if let zones = item["zone"] {
+            self.zoneLabel.text = zones as? String
+        }
+        
+        if let pay_time = item["pay_time"] as? String {
+            self.paytimeLabel.text = pay_time
+        }
+        
+        if let background_image = item["background_image"] as? String {
+            cityPicView.image = UIImage(named: "\(background_image)")
+        }
+        
+        
         
         /*self.navigationController?.navigationBar.titleTextAttributes = [
             NSFontAttributeName: UIFont(name: "GillSans-SemiBold", size: 20),
@@ -43,6 +65,8 @@ class NyparkeringViewController: UIViewController {
         
         middleBlockView.layer.cornerRadius = 10.0
         leftBlockView.layer.cornerRadius = 10.0
+        
+        
         rightBlockView.layer.cornerRadius = 10.0
         buyTicketButton.layer.cornerRadius = 10.0
         
@@ -160,5 +184,15 @@ class NyparkeringViewController: UIViewController {
     @IBAction func seeSignsCloseButtonOnTouch(_ sender: Any) {
         animateCloseButton2()
     }
+    @IBAction func findParkActionButton(_ sender: Any) {
+        
+        let coordinate = self.item["coordinate"] as! CLLocationCoordinate2D
+        
+        let url = "http://maps.apple.com/maps?daddr=\(coordinate.latitude),\(coordinate.longitude)"
+        UIApplication.shared.openURL(URL(string:url)!)
+    
+    }
+    
+    
 
 }

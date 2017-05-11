@@ -1,0 +1,9 @@
+{
+
+        "data":  [
+            { "long": 12.857613600000036, "lat": 56.6771596, "title": "Parkering A", "locationName": "Waikiki Gateway Park", "discipline": "Sculpture", "pay_time": "9 - 17", "zone": "Grön, 4", "background_image": "1"},
+            { "long": 11.974559999999997, "lat": 57.70887, "title": "Parkering B", "locationName": "Waikiki Gateway Park", "discipline": "Sculpture",  "pay_time": "14 - 15", "zone": "Rosa, 4", "background_image": "2"},
+                  { "long": 13.003822000000014, "lat": 55.604981, "title": "Parkering C", "locationName": "Waikiki Gateway Park", "discipline": "Sculpture",  "pay_time": "12 - 17", "zone": "Blå, 4", "background_image" : "3"}
+        ]
+}
+

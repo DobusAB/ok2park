@@ -6,6 +6,9 @@ target 'ok2park' do
   use_frameworks!
 
   pod "KCFloatingActionButton", "~> 2.2.0"
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'SwiftyJSON'
 
   # Pods for ok2park
 

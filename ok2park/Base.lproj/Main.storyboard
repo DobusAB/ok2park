@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,38 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybo-Wl-Eg1">
-                                <rect key="frame" x="238" y="605" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Köp biljett, m.m."/>
-                                <connections>
-                                    <action selector="goToNyparkeringSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfc-Kg-Xbl"/>
-                                    <segue destination="Hx1-lG-XRO" kind="show" identifier="ShowNyparkeringSegue" id="GN4-Nt-j7D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iq-7M-7gF">
-                                <rect key="frame" x="225" y="556" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gå till mina fordon"/>
-                                <connections>
-                                    <action selector="goToMinafordonSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VGy-OE-UjQ"/>
-                                    <segue destination="szO-HS-Hyq" kind="show" identifier="ShowMinafordonSegue" id="m60-Mh-h6v"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Försökte lägga in KCActionButton, men det krånglade!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8q-ah-Zfs">
-                                <rect key="frame" x="20" y="262" width="335" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gVu-8y-Lup">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gVu-8y-Lup" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8VO-TA-vfs"/>
+                            <constraint firstItem="gVu-8y-Lup" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="TVQ-tL-Rm4"/>
+                            <constraint firstAttribute="trailing" secondItem="gVu-8y-Lup" secondAttribute="trailing" id="TZn-qT-q21"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gVu-8y-Lup" secondAttribute="bottom" id="rXa-ju-28d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="gVu-8y-Lup" id="xkW-eI-q2z"/>
+                        <segue destination="szO-HS-Hyq" kind="presentation" identifier="ShowMinafordonSegue" id="Caq-Zy-xgi"/>
+                        <segue destination="Hx1-lG-XRO" kind="presentation" identifier="ShowNyparkeringSegue" id="Adu-9x-tmM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141.59999999999999" y="137.18140929535232"/>
+            <point key="canvasLocation" x="100" y="214.54272863568218"/>
         </scene>
         <!--Minafordon-->
         <scene sceneID="0KW-Li-HYn">
