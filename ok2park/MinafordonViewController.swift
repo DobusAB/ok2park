@@ -20,7 +20,8 @@ class MinafordonViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var colorViewDark: UIView!
     @IBOutlet weak var colorViewGray: UIView!
     @IBOutlet weak var colorViewGreen: UIView!
-
+    @IBOutlet weak var colorViewInCell: UIView!
+    
     @IBOutlet weak var chooseColorHeaderView: UIView!
     @IBOutlet weak var chooseColorView: UIView!
     @IBOutlet weak var addNewPlateView: UIView!
