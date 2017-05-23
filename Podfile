@@ -9,6 +9,9 @@ target 'ok2park' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'SwiftyJSON'
+  pod 'Firebase/Messaging'
+  pod 'SwiftMessages'
+  pod 'Alamofire', '~> 4.4'
 
   # Pods for ok2park
 

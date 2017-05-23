@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import SwiftyJSON
+import Firebase
 
 //import KCFloatingActionButton
 
@@ -18,15 +19,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     var actionButton: ActionButton!
     var dataToSend: [String: Any] = [:]
-    
+    var regionRadius: CLLocationDistance = 1000
     
     var locationManager = CLLocationManager()
     var regionsToMonitor = [CLCircularRegion]()
+
     
     func checkLocationAuthorizationStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapView.showsUserLocation = true
-            locationManager.startUpdatingLocation()
+            
         } else {
             locationManager.requestWhenInUseAuthorization()
             
@@ -34,7 +36,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func loadInitialData() {
+    /* func loadInitialData() {
         // 1
         let fileName = Bundle.main.path(forResource: "parks", ofType: "json");
         var data: Data?
@@ -65,46 +67,98 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                   pay_time: item["pay_time"].stringValue,
                                   zones: item["zone"].stringValue,
                                   background_image: item["background_image"].stringValue,
-                                  park_sign: item["park_sign"].stringValue
+                                  park_sign: item["park_sign"].stringValue,
+                                  icon_image: "location_icon"
                                   
                 )
                 mapView.addAnnotation(parks)
             }
         }
+    }*/
+
+    func getdata() {
+        let ref = FIRDatabase.database().reference()
+        ref.child("data/locations").observe(FIRDataEventType.value, with: { (snapshot) in
+            //let dict = snapshot.value as? [String : AnyObject] ?? [:]
+            
+            if let value = snapshot.value as? NSArray {
+                
+                let allAnnotations = self.mapView.annotations
+                self.mapView.removeAnnotations(allAnnotations)
+                let json = JSON(value)
+                var i = 0;
+                for (_, item) in json {
+                    var reg_nr = "";
+                    if(item["reg_nr"].exists())
+                    {
+                        reg_nr = item["reg_nr"].stringValue
+                    }
+                  let parks = Parks(title: item["title"].stringValue,
+                                      locationName: item["locationName"].stringValue,
+                                      discipline: item["discipline"].stringValue,
+                                      coordinate: CLLocationCoordinate2D(latitude: item["lat"].doubleValue, longitude: item["long"].doubleValue),
+                                      pay_time: item["pay_time"].stringValue,
+                                      zones: item["zone"].stringValue,
+                                      background_image: item["background_image"].stringValue,
+                                      park_sign: item["park_sign"].stringValue,
+                                      icon_image: "location_icon",
+                                      id: i,
+                                      reg_nr: reg_nr
+                        
+                    )
+                    
+                    self.mapView.addAnnotation(parks)
+                    i += 1;
+                }
+
+                
+            }
+        })
+        
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    {
-        
-        let location = locations.last! as CLLocation
-        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-        
-        self.mapView.setRegion(region, animated: true)
-    }
     
-    /* let regionRadius: CLLocationDistance = 1000
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true)
-    } */
     
     override func viewWillAppear(_ animated: Bool) {
         
         if actionButton.active == true {
             actionButton.toggleMenu()
         }
+        self.getdata()
         
         
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //1
+        if locations.count > 0 {
+            let location = locations.last!
+            print("Accuracy: \(location.horizontalAccuracy)")
+            
+            //2
+            if location.horizontalAccuracy < 100 {
+                //3
+                manager.stopUpdatingLocation()
+                let span = MKCoordinateSpan(latitudeDelta: 0.014, longitudeDelta: 0.014)
+                let region = MKCoordinateRegion(center: location.coordinate, span: span)
+                mapView.setRegion(region, animated: true)
+                //mapView.region = region
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkLocationAuthorizationStatus()
+        // checkLocationAuthorizationStatus()
         mapView.delegate = self
+        mapView.showsUserLocation = true
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
         
-        loadInitialData()
+       
+        
+        // loadInitialData()
         
         
         
@@ -118,24 +172,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         actionButton = ActionButton(attachedToView: self.view, items: [])
         
-        let PeopleIcon = UIImage(named: "car-shape_icon")!
+        let PeopleIcon = UIImage(named: "car_icon")!
         
-        let ticketIcon = UIImage(named: "ticket_icon")!
+        // let ticketIcon = UIImage(named: "ticket_icon")!
         
         let requestOffer = ActionButtonItem(title: "Gå till mina fordon", image: PeopleIcon)
         
-        let goToTicket = ActionButtonItem(title: "Biljetter", image: ticketIcon)
+        // let goToTicket = ActionButtonItem(title: "Biljetter", image: ticketIcon)
         
         requestOffer.action = { item in
             self.performSegue(withIdentifier: "ShowMinafordonSegue", sender: self)
         }
         
-        goToTicket.action = {item in
+        /*goToTicket.action = {item in
             self.performSegue(withIdentifier: "ShowNyparkeringSegue", sender: self)
             
-        }
+        }*/
         
-        actionButton = ActionButton(attachedToView: self.view, items: [requestOffer,goToTicket ])
+        actionButton = ActionButton(attachedToView: self.view, items: [requestOffer ])
 
         
         actionButton.action = { button in button.toggleMenu() }
@@ -146,7 +200,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let location = view.annotation as! Parks
-        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        // let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
         
         dataToSend = [
             "title": location.title!,
@@ -156,7 +210,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             "zone": location.zones,
             "pay_time": location.pay_time,
             "background_image": location.background_image,
-            "park_sign": location.park_sign
+            "park_sign": location.park_sign,
+            "id": location.id
             ] as [String : Any];
         performSegue(withIdentifier: "ShowNyparkeringSegue", sender: self)
         //print(location)

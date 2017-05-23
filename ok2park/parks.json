@@ -1,9 +1,479 @@
 {
-
-        "data":  [
-                  { "long": 12.857613600000036, "lat": 56.6771596, "title": "Parkering A", "locationName": "Waikiki Gateway Park", "discipline": "Sculpture", "pay_time": "9 - 17", "zone": "Grön, 4", "background_image": "1", "park_sign": "A"},
-            { "long": 11.974559999999997, "lat": 57.70887, "title": "Parkering B", "locationName": "Waikiki Gateway Park", "discipline": "Sculpture",  "pay_time": "14 - 15", "zone": "Rosa, 4", "background_image": "2", "park_sign": "B"},
-                  { "long": 13.003822000000014, "lat": 55.604981, "title": "Parkering C", "locationName": "Waikiki Gateway Park", "discipline": "Sculpture",  "pay_time": "12 - 17", "zone": "Blå, 4", "background_image" : "3", "park_sign": "C"}
-        ]
+    
+    "data":[
+            {
+          		"long": 12.881687,
+          		"lat": 56.662082,
+          		"title": "1A",
+          		"locationName": "Högskolan",
+          		"discipline": "Sculpture",
+          		"pay_time": "9 - 17",
+          		"zone": "Grön, 4",
+          		"background_image": "1",
+          		"park_sign": "A"
+            },
+            {
+            "long": 12.882427,
+            "lat": 56.662593,
+            "title": "2A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image": "2",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.883232,
+            "lat": 56.663129,
+            "title": "3A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "3", "park_sign": "A"
+            },
+            {
+            "long": 12.882469,
+            "lat": 56.663045,
+            "title": "4A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "4", "park_sign": "A"
+            },
+            {
+            "long": 12.882715,
+            "lat": 56.663508,
+            "title": "5A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "5",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.881939,
+            "lat": 56.663285,
+            "title": "6B",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Tillstånd",
+            "background_image" : "6",
+            "park_sign": "B"
+            },
+            {
+            "long": 12.881870,
+            "lat": 56.663107,
+            "title": "7B",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "Tillstånd",
+            "background_image" : "7",
+            "park_sign": "B"
+            },
+            {
+            "long": 12.881383,
+            "lat": 56.662641,
+            "title": "8A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "8",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.880588,
+            "lat": 56.662287,
+            "title": "9A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "9",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.880700,
+            "lat": 56.662090,
+            "title": "10A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "10",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.880679,
+            "lat": 56.662580,
+            "title": "11A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "11",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.879134,
+            "lat": 56.661741,
+            "title": "12A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "12",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.879416,
+            "lat": 56.661553,
+            "title": "13C",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "Förhyrda",
+            "background_image" : "13",
+            "park_sign": "C"
+            },
+            {
+            "long": 12.880231,
+            "lat": 56.661619,
+            "title": "14A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "14",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.877363,
+            "lat": 56.662107,
+            "title": "15A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "15",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.876134,
+            "lat": 56.662790,
+            "title": "16D",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "MAXI",
+            "background_image" : "16",
+            "park_sign": "D"
+            },
+            {
+            "long": 12.877497,
+            "lat": 56.663139,
+            "title": "17A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "17",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.878916,
+            "lat": 56.663184,
+            "title": "18A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "18",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.877545,
+            "lat": 56.664306,
+            "title": "19A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "19",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.876338,
+            "lat": 56.664344,
+            "title": "20F",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "Tillstånd",
+            "background_image" : "20",
+            "park_sign": "F"
+            },
+            {
+            "long": 12.876144,
+            "lat": 56.664565,
+            "title": "21A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "21",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.877281,
+            "lat": 56.664621,
+            "title": "22G",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "22",
+            "park_sign": "G"
+            },
+            {
+            "long": 12.877416,
+            "lat": 56.664854,
+            "title": "23H",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "1 timme",
+            "zone": "Besökande",
+            "background_image" : "23",
+            "park_sign": "H"
+            },
+            {
+            "long": 12.878934,
+            "lat": 56.665078,
+            "title": "24A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "24",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.879777,
+            "lat": 56.665031,
+            "title": "25A",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 17",
+            "zone": "Grön, 4",
+            "background_image" : "25",
+            "park_sign": "A"
+            },
+            {
+            "long": 12.881009,
+            "lat": 56.664531,
+            "title": "26E",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "Tillstånd",
+            "zone": "Grön, 4",
+            "background_image" : "26",
+            "park_sign": "E"
+            },
+            {
+            "long": 12.881009,
+            "lat": 56.664531,
+            "title": "27I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "27",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.876878,
+            "lat": 56.665543,
+            "title": "28I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "28",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.875497,
+            "lat": 56.666252,
+            "title": "29I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "29",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.876082,
+            "lat": 56.665495,
+            "title": "30I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "30",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.874995,
+            "lat": 56.665658,
+            "title": "31I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "31",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.874990,
+            "lat": 56.665128,
+            "title": "32I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "32",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.874990,
+            "lat": 56.665128,
+            "title": "32I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "32",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.874603,
+            "lat": 56.664589,
+            "title": "33I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "33",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.873539,
+            "lat": 56.665617,
+            "title": "34I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "34",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.872428,
+            "lat": 56.664840,
+            "title": "35J",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "-",
+            "background_image" : "35",
+            "park_sign": "J"
+            },
+            {
+            "long": 12.873087,
+            "lat": 56.664141,
+            "title": "36J",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "-",
+            "background_image" : "36",
+            "park_sign": "J"
+            },
+            {
+            "long": 12.873477,
+            "lat": 56.664273,
+            "title": "37J",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "-",
+            "background_image" : "37",
+            "park_sign": "J"
+            },
+            {
+            "long": 12.872941,
+            "lat": 56.664906,
+            "title": "38J",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "-",
+            "background_image" : "38",
+            "park_sign": "J"
+            },
+            {
+            "long": 12.874202,
+            "lat": 56.664222,
+            "title": "39J",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "-",
+            "zone": "-",
+            "background_image" : "39",
+            "park_sign": "J"
+            },
+            {
+            "long": 12.874357,
+            "lat": 56.665823,
+            "title": "40I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "40",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.874634,
+            "lat": 56.666184,
+            "title": "41I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "41",
+            "park_sign": "I"
+            },
+            {
+            "long": 12.875489,
+            "lat": 56.666569,
+            "title": "42I",
+            "locationName": "Waikiki Gateway Park",
+            "discipline": "Sculpture",
+            "pay_time": "9 - 18",
+            "zone": "Gul, 3",
+            "background_image" : "42",
+            "park_sign": "I"
+            },
+            
+            
+            ]
 }
 

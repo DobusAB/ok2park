@@ -20,8 +20,6 @@ class ImageViewController: UIViewController {
         self.imageView.image = UIImage(named: "\(item)")
         
         
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

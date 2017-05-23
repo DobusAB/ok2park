@@ -21,8 +21,10 @@ class Parks: NSObject, MKAnnotation {
     let zones: String
     let background_image: String
     let park_sign: String
-    
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D, pay_time: String, zones: String, background_image: String, park_sign: String) {
+    let icon_image: String
+    let id: Int
+    let reg_nr: String
+    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D, pay_time: String, zones: String, background_image: String, park_sign: String, icon_image: String, id: Int, reg_nr: String) {
         self.title = title
         self.locationName = locationName
         self.discipline = discipline
@@ -31,6 +33,9 @@ class Parks: NSObject, MKAnnotation {
         self.zones = zones
         self.background_image = background_image
         self.park_sign = park_sign
+        self.icon_image = icon_image
+        self.id = id
+        self.reg_nr = reg_nr
         
         super.init()
     }

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import SwiftyJSON
+import SwiftMessages
 
 class MinafordonViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     @IBOutlet weak var colorViewPurple: UIView!
@@ -542,7 +543,15 @@ class MinafordonViewController: UIViewController, UITableViewDelegate, UITableVi
         let count = self.offers.count
         let car = ["reg_nr" : self.regNrTextField.text!, "color_id": self.color_id] as [String : Any]
         ref.child("data/cars/\(count)").setValue(car)
+        let view = MessageView.viewFromNib(layout: .MessageView)
+        var config = SwiftMessages.Config()
+        config.duration = .seconds(seconds: 5)
+        view.configureContent(title: "Lagt till bil" , body: "Du har nu lagt till bilen \(self.regNrTextField.text!)")
+        // Show the message.
+        SwiftMessages.show(config: config, view: view)
+        SwiftMessages.show(view: view)
         self.regNrTextField.text = ""
+        
         
         self.animateCloseButton()
         self.resetButtons()
